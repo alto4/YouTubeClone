@@ -118,7 +118,7 @@ main {
 
 .recommended-videos {
     flex: 38%;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .up-next {
@@ -126,11 +126,21 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 1.2rem .3rem .6rem;
 }
+
+.up-next span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #444;
+}
+
 
 .video-card {
     display: flex;
-    padding: .4rem
+    padding: .4rem;
+    cursor: pointer;
 }
 
 .video-card .thumbnail {
@@ -147,13 +157,18 @@ main {
     color: #555;
 }
 
-section {
+/* .video-details,
+.description,
+.comments {
     border: 1px solid red;
+} */
+
+.rule {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 1rem 0;
+
 }
-
-
-
-
 
 
 /* Toggle Autoplay Switch from W3 Schools */
@@ -161,8 +176,8 @@ section {
 .switch {
     position: relative;
     display: flex;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 20px;
     align-items: center;
 }
 
@@ -174,8 +189,11 @@ section {
 }
 
 .autoplay-label {
-    margin-left: -4.5rem;
-
+    margin-left: -6rem;
+    color: #555;
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* The slider */
@@ -194,8 +212,8 @@ section {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 12px;
+    width: 12px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -212,9 +230,9 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
 }
 
 /* Rounded sliders */
