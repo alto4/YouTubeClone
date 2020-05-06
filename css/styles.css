@@ -96,7 +96,7 @@ header a:hover,
 .container {
     display: flex;
     min-height: 90vh;
-    padding: 0 6%;
+    padding: 0 8%;
 }
 
 main {
@@ -106,6 +106,7 @@ main {
 .video-player iframe {
     height: 68vh;
     width: 100%;
+    padding-top: 2rem;
 }
 
 .video-details {
@@ -118,7 +119,7 @@ main {
 
 .recommended-videos {
     flex: 38%;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .up-next {
@@ -126,7 +127,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-top: 1px solid #ccc;
+    border-top: 1.5px solid #ccc;
     padding: 1.2rem .3rem .6rem;
 }
 
@@ -165,10 +166,114 @@ main {
 
 .rule {
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1.5px solid #ccc;
     margin: 1rem 0;
 
 }
+
+/* Video Info Section */
+.video-details-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #777;
+    padding: 0;
+    font-weight: 500;
+    border-bottom: 1.5px solid #ccc;
+}
+
+.video-details-title {
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.video-info-right {
+    display: flex;
+    cursor: pointer;
+}
+
+
+.video-info-right span {
+    padding: 0 1rem;
+}
+
+.video-info-right i {
+    padding-right: .9rem;
+}
+
+.fa-ellipsis-h {
+    margin-left: 1rem;
+    align-self: flex-end;
+}
+
+.thumbs {
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #999;
+}
+
+/* Video Description Styles */
+.description p {
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid #ccc;
+}
+
+.description-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-details {
+    display: flex;
+}
+
+.channel-icon {
+    border-radius: 50%;
+    width: 4rem;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+}
+
+.channel-title {
+    font-size: 1.1rem;
+    margin: 1.5rem 0 .3rem;
+    cursor: pointer;
+}
+
+.channel-subscribers {
+    color: #666;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.btn-subscribe {
+    padding: .8rem 1rem;
+    color: #555;
+    background-color: #ddd;
+    outline: none;
+    border: none;
+    border-radius: .3em;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribe i {
+    color: #777;
+    padding-left: 1.6rem;
+    cursor: pointer;
+}
+
+.description-text {
+    padding: 0 5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
 
 
 /* Toggle Autoplay Switch from W3 Schools */
