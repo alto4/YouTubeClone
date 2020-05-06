@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo {
+    height: 1.5rem;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    padding: .8rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    color: #555;
+    margin-right: 2.5rem;
+}
+
+header a:hover,
+.hamburger:hover,
+.logo:hover,
+.user-icon {
+    cursor: pointer;
+}
+
+.searchbar,
+.btn-search {
+    border: 1px solid #bbb;
+    height: 2.3rem;
+}
+
+.searchbar {
+    width: 720px;
+    padding: .6rem;
+    font-size: 1.2rem;
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+    outline: none;
+
+}
+
+.btn-search {
+    width: 4rem;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+    border-left: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar:focus,
+.btn-search:focus {
+    border-color: darkblue;
+    border-left: 1px solid darkblue;
+}
+
+.btn-search i {
+    margin: 0 auto;
+}
+
+.user-icon {
+    outline: none;
+    background-color: red;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
+
+
+.container {
+    display: flex;
+    min-height: 90vh;
+    padding: 0 6%;
+}
+
+main {
+    flex: 3;
+}
+
+.video-player {
+    height: 68vh;
+}
+
+.video-details {
+    height: 15vh;
+}
+
+.description {
+    height: 10vh;
+}
+
+.recommended-videos {
+    flex: 2;
+}
+
+section {
+    border: 1px solid red;
+}
